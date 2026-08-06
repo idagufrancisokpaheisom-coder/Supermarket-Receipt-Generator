@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Receipt Generator</title>
+
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛒 Supermarket Receipt Generator</h1>
+
+    <div class="card">
+
+        <label>How many products do you want to buy?</label>
+
+        <input
+            type="number"
+            id="numberOfProducts"
+            placeholder="Enter number"
+        >
+
+        <button id="startBtn">
+            Start Shopping
+        </button>
+
+    </div>
+
+    <div id="shoppingArea"></div>
+
+    <button
+        id="generateBtn"
+        class="hidden">
+        Generate Receipt
+    </button>
+
+    <div id="output"></div>
+
+</div>
+
+<script src="second.js"></script>
+
+</body>
+</html>

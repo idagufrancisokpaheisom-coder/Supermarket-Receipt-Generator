@@ -1,0 +1,432 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#141e30,#243b55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1000px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    color:#243b55;
+
+    margin-bottom:30px;
+
+    font-size:2rem;
+
+}
+
+/* ===========================
+   INPUT SECTION
+=========================== */
+
+.card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.card label{
+
+    width:100%;
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+input{
+
+    flex:1;
+
+    min-width:200px;
+
+    padding:14px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+input:focus{
+
+    border-color:#243b55;
+
+}
+
+button{
+
+    padding:14px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#243b55;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#0b6ea8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   PRODUCT AREA
+=========================== */
+
+.productCard{
+
+    margin-bottom:20px;
+
+}
+
+.productCard label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:2px solid #ddd;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+select:focus{
+
+    border-color:#243b55;
+
+}
+
+/* ===========================
+   OUTPUT
+=========================== */
+
+#output{
+
+    margin-top:30px;
+
+}
+
+.receipt{
+
+    background:#f9f9f9;
+
+    border-radius:15px;
+
+    padding:20px;
+
+}
+
+.receipt h2{
+
+    text-align:center;
+
+    color:#243b55;
+
+    margin-bottom:20px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+}
+
+th{
+
+    background:#243b55;
+
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:left;
+
+}
+
+tr:nth-child(even){
+
+    background:#f2f2f2;
+
+}
+
+.summary{
+
+    margin-top:25px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.summary h3{
+
+    color:#243b55;
+
+    margin-bottom:15px;
+
+}
+
+.summary p{
+
+    margin:8px 0;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ===========================
+   TABLET RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .container{
+
+        padding:25px;
+
+    }
+
+    h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .card{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    input{
+
+        width:100%;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:480px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    .container{
+
+        padding:20px;
+
+        border-radius:15px;
+
+    }
+
+    h1{
+
+        font-size:1.4rem;
+
+    }
+
+    input{
+
+        font-size:15px;
+
+        padding:12px;
+
+    }
+
+    select{
+
+        font-size:15px;
+
+        padding:12px;
+
+    }
+
+    button{
+
+        font-size:15px;
+
+        padding:12px;
+
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+
+        display:block;
+
+    }
+
+    thead{
+
+        display:none;
+
+    }
+
+    tr{
+
+        margin-bottom:15px;
+
+        border-radius:10px;
+
+        background:white;
+
+        padding:10px;
+
+        box-shadow:0 5px 10px rgba(0,0,0,.08);
+
+    }
+
+    td{
+
+        border:none;
+
+        display:flex;
+
+        justify-content:space-between;
+
+        padding:8px 0;
+
+    }
+
+    td:first-child{
+
+        font-weight:bold;
+
+    }
+
+}
